@@ -1,0 +1,234 @@
+<<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolsos Reciclados Estilo Kawaii</title>
+    <!-- Tailwind CSS CDN para el estilo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes de Google Fonts para el estilo Kawaii -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <!-- Iconos de Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+      /* Estilos para el body y las fuentes */
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .font-shantell {
+        font-family: 'Shantell Sans', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-pink-50 text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Cabecera y Navegación -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <nav class="container mx-auto flex items-center justify-between p-4">
+        <a href="#" class="text-3xl font-bold font-shantell text-pink-500">
+          <i class="fas fa-heart text-pink-500 mr-2"></i>Bolsos Kawaii
+        </a>
+        <ul class="hidden md:flex space-x-8 text-pink-500 font-semibold">
+          <li><a href="#productos" class="hover:text-pink-600 transition">Productos</a></li>
+          <li><a href="#proceso" class="hover:text-pink-600 transition">Proceso de Compra</a></li>
+          <li><a href="#contacto" class="hover:text-pink-600 transition">Contacto</a></li>
+        </ul>
+        <button aria-label="Abrir menú" class="md:hidden text-pink-500 focus:outline-none" id="menu-btn">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+      </nav>
+      <!-- Menú móvil -->
+      <div class="hidden md:hidden bg-white text-pink-500 font-semibold flex flex-col space-y-4 p-4" id="mobile-menu">
+        <a href="#productos" class="hover:text-pink-600 transition">Productos</a>
+        <a href="#proceso" class="hover:text-pink-600 transition">Proceso de Compra</a>
+        <a href="#contacto" class="hover:text-pink-600 transition">Contacto</a>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow container mx-auto px-4 py-12">
+
+      <!-- Sección Principal (Hero) -->
+      <section class="text-center mb-20">
+        <h1 class="text-6xl md:text-8xl font-black text-pink-500 font-shantell mb-4 drop-shadow-lg">
+          Bolsos Kawaii Reciclados
+        </h1>
+        <p class="text-pink-400 text-xl md:text-2xl max-w-4xl mx-auto mb-8">
+          ¡Dale un toque tierno y eco-friendly a tu estilo! Descubre nuestros bolsos únicos y sostenibles.
+        </p>
+        <!-- Se ha actualizado esta línea con una imagen real -->
+        <img src="logobolso.jpg" alt="Colección de objetos kawaii como un osito, un helado y una estrella en colores pastel" class="mx-auto rounded-3xl shadow-lg border-4 border-pink-400">
+      </section>
+
+      <!-- Sección de Productos -->
+      <section id="productos" class="mb-20">
+        <h2 class="text-5xl font-bold font-shantell text-center text-pink-500 mb-12 drop-shadow-md">Nuestros Tiernos Diseños</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          
+          <!-- Tarjeta de Producto 1 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="vaquitaPlatano.jpg" alt="Bolso reciclado de Leche Vaquita de Platano" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Leche Vaquita Platano</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+          
+          <!-- Tarjeta de Producto 2 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="vaquitaMora.jpg" alt="Bolso reciclado de Leche Vaquita de Mora" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Leche Vaquita Mora</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+
+          <!-- Tarjeta de Producto 3 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="pilManzana.jpg" alt="Bolso reciclado de Pilfrut Manzana" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Pilfrut Manzana</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+
+          <!-- Tarjeta de Producto 4 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="pilPina.jpg" alt="Bolso reciclado de Pilfrut Piña" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Pilfrut Piña</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+
+          <!-- Tarjeta de Producto 5 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="chiquiChoc.jpg" alt="Bolso reciclado de Chiqui Choc" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Chiqui Choc</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+
+          <!-- Tarjeta de Producto 6 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="chiquiCoco.jpg" alt="Bolso reciclado de Chiqui Coco" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Chiqui Coco</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+
+          <!-- Tarjeta de Producto 7 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="pilDurazno.jpg" alt="Bolso reciclado de Pilfrut Durazno" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Pilfrut Durazno</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+          
+          <!-- Tarjeta de Producto 8 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="pilFresa.jpg" alt="Bolso reciclado de Pilfrut Fresa" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Pilfrut Fresa</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+          
+          <!-- Tarjeta de Producto 9 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="pilMaracuya.jpg" alt="Bolso reciclado de Pilfrut Maracuyá" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Pilfrut Maracuyá</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+          
+          <!-- Tarjeta de Producto 10 -->
+          <article class="bg-white rounded-3xl shadow-md p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 border border-pink-300">
+            <img src="pilNaranja.jpg" alt="Bolso reciclado de Pilfrut Naranja" class="w-48 h-48 object-cover rounded-2xl mb-4 border-2 border-purple-300">
+            <h3 class="text-2xl font-bold text-pink-500 mb-2">Pilfrut Naranja</h3>
+            <a href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition hover:bg-pink-600">
+              <i class="fab fa-whatsapp mr-2"></i>Comprar
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Sección de Proceso de Compra -->
+      <section id="proceso" class="bg-white rounded-3xl p-10 max-w-4xl mx-auto mb-20 shadow-md border border-pink-300">
+        <h2 class="text-5xl font-bold font-shantell text-center text-pink-500 mb-8 drop-shadow-md">Proceso de Compra</h2>
+        <p class="text-gray-600 text-lg text-center mb-8">
+          Comprar tu nuevo bolso reciclado es rápido y sencillo. Sigue estos pasos:
+        </p>
+        <div class="grid md:grid-cols-2 gap-8 text-center md:text-left">
+          <div class="flex items-center gap-4">
+            <div class="bg-pink-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-lg">1</div>
+            <div>
+              <h3 class="text-xl font-bold text-pink-500">Escoge tus productos</h3>
+              <p class="text-gray-600">Selecciona los bolsos que más te gusten de nuestro catálogo.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="bg-pink-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-lg">2</div>
+            <div>
+              <h3 class="text-xl font-bold text-pink-500">Contáctanos y Personaliza</h3>
+              <p class="text-gray-600">Escríbenos por WhatsApp con tu pedido. ¡También hacemos pedidos personalizados!</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="bg-pink-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-lg">3</div>
+            <div>
+              <h3 class="text-xl font-bold text-pink-500">Elige tu método de pago</h3>
+              <p class="text-gray-600">Puedes pagar con QR (solo para envíos) o contra entrega.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="bg-pink-500 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl shadow-lg">4</div>
+            <div>
+              <h3 class="text-xl font-bold text-pink-500">Recibe tu Pedido</h3>
+              <p class="text-gray-600">Las entregas se realizan en cualquier estación del teleférico lila, teleférico amarillo de Ciudad Satélite y monoblock.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Contacto con Botón de WhatsApp -->
+      <section id="contacto" class="text-center max-w-2xl mx-auto p-8 rounded-3xl bg-white shadow-md border border-pink-300">
+        <h2 class="text-4xl font-bold font-shantell text-pink-500 mb-6 drop-shadow-md">
+          ¡Un estilo tierno y único!
+        </h2>
+        <p class="text-gray-600 text-lg mb-8">
+          ¿Listo para unirte a la moda sostenible? Haz clic abajo para contactarnos y pedir tu bolso ahora mismo.
+        </p>
+        <a aria-label="Contactar por WhatsApp" href="https://wa.link/yzv0j4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-pink-500 hover:bg-pink-600 text-white font-bold text-lg py-4 px-10 rounded-full shadow-lg transition">
+          <i class="fab fa-whatsapp fa-2x mr-4"></i>
+          Enviar mensaje por WhatsApp
+        </a>
+      </section>
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-pink-100 text-pink-500 py-6 mt-auto">
+      <div class="container mx-auto text-center text-sm font-semibold">
+        <p class="mb-1">© 2025 Byte Craft Code. Todos los derechos reservados.</p>
+        <p>Síguenos en TikTok: BYTE CRAFT CODE</p>
+      </div>
+    </footer>
+
+    <!-- Script para el menú móvil -->
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
